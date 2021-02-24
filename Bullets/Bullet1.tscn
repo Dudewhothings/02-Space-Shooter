@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Bullets/Bullet1.gd" type="Script" id=1]
+[ext_resource path="res://Assets/blasterbolt.png" type="Texture" id=2]
+
+[node name="Bullet1" type="KinematicBody2D"]
+collision_layer = 8
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 4, -14.7, 4, -12.8, 7, -9.8, 7, 9, 5.2, 9, 3.2, 13, 0.1, 13, -6, 14.6, -6, 12, -11, 8, -11, -10, -6, -14, -6, -16, -3.6, -16 )
